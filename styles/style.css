@@ -1,1 +1,124 @@
 /* место для вашего кода */
+header{
+    display: grid;
+    grid-template-columns: 1fr 148px 1fr;
+    padding: 92px 50px 96px 50px;
+    align-items:center;
+}
+
+.header__menu{
+    width: 391.48px;
+    height: 22px;
+
+
+}
+.header__links-list{
+    display: flex;
+    font-family: 'Raleway';
+    gap: 33px;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 18.3px;
+    list-style:circle;
+    text-underline-offset: 3px; 
+}
+
+.header__links-list li::marker {
+    font-size: 16px;
+    margin-left: -5px;
+}
+.header__logo-image {
+    width: 148px;
+    height: 105px;  
+}
+
+.header__address{
+    margin: 0;
+    padding: 0;
+    width: 240px;
+    height: 101px;
+    justify-self: end;
+    font-family: 'Raleway';
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24.3px;
+    text-decoration: none;
+    font-style: normal;
+    text-underline-offset: 4px; 
+}
+
+
+.cover {
+    position: relative;
+    background-image: url('../images/cover.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    padding: 50px; 
+    color: #fff; 
+    text-align: center; 
+    z-index: 0; 
+  }
+  
+  /* Оверлей */
+  .cover__overlay {
+    position: absolute;
+    inset: 0; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+  }
+  
+  /* Заголовок */
+  .cover__title {
+    position: relative;
+    padding-top: 115px; 
+    font-family: 'Raleway';
+    font-size: 100px;
+    font-weight: bold;
+    line-height: 105px;
+    letter-spacing: 0.3em;
+    z-index: 2; 
+  }
+  
+  .cover__word {
+    display: block; 
+  }
+  
+  .cover__word--1 {
+    text-align: left;
+  }
+  
+  .cover__word--2 {
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 30px;
+  }
+  
+  .cover__word--3 {
+   text-align: right;
+   padding-top: 31px;
+   padding-left: 614px;
+  }
+  
+
+  .cover__footer {
+    position: relative;
+    font-size: 18px;
+    margin-top: 20px;
+    z-index: 2;
+  }
+  
+  .cover__button {
+    margin-top: 20px;
+    padding: 10px 20px;
+
+    border: none;
+    cursor: pointer;
+    z-index: 2; /* Поверх оверлея */
+  }
+  
+  .cover__button a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
