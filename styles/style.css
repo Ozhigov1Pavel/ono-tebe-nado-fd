@@ -2,7 +2,7 @@
 header{
     display: grid;
     grid-template-columns: 1fr 148px 1fr;
-    padding: 92px 50px 96px 50px;
+    padding: 92px 50px 93px 50px;
     align-items:center;
 }
 
@@ -59,8 +59,8 @@ header{
     z-index: 0; 
   }
   
-  /* Оверлей */
-  .cover__overlay {
+  
+  .overlay {
     position: absolute;
     inset: 0; 
     background-color: rgba(0, 0, 0, 0.5); 
@@ -70,7 +70,7 @@ header{
   /* Заголовок */
   .cover__title {
     position: relative;
-    padding-top: 115px; 
+    padding-top: 119px; 
     font-family: 'Raleway';
     font-size: 100px;
     font-weight: bold;
@@ -101,24 +101,130 @@ header{
   
 
   .cover__footer {
+    display: flex;
+    align-items: center;
     position: relative;
     font-size: 18px;
-    margin-top: 20px;
+    margin-top: 110px;
     z-index: 2;
+    gap: 106px;
+  }
+  .cover__p{
+    font-family: 'Raleway';
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    word-spacing: 0.85em;
+    text-wrap: nowrap;
   }
   
   .cover__button {
-    margin-top: 20px;
-    padding: 10px 20px;
-
-    border: none;
+    padding: 12px 32px 11px 31px;
+    border:#fff solid 1px;
     cursor: pointer;
-    z-index: 2; /* Поверх оверлея */
+    background: transparent;
+    z-index: 2; 
+
   }
   
   .cover__button a {
     color: #fff;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 22px;
+    text-wrap: nowrap;
   }
+
+.lots {
+  margin:180px 24px 0px 24px;
+}
+.lots h2 {
+  font-family: 'Raleway';
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 46.96px;
+  padding-left: 40px;
+
+}
+
+.lots__card-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  text-decoration: none;
+  gap:25px;
+  padding-top: 26px;
+}
+.lots__card-list-item {
+  width: 334px;
+  height: 596px;
+}
+.card {
+  position: relative; 
+  width: 100%; 
+  height: 100%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 48px 40px 48px 40px; 
+  color: #fff;
+  z-index: 0; 
+}
+
+/* Типы карточек */
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+  background-size: cover; 
+  background-position: center;
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+  background-size: cover; 
+  background-position: center;
+}
+
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+  background-size: cover; 
+  background-position: center;
+}
+
+
+.card-link {
+  text-decoration: none; 
+  color: inherit; 
+  display: block; 
+  height: 100%;
+}
+
+.card__title {
+  position: relative;
+  font-family: 'Raleway';
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 26.4px;
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: underline; 
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  z-index: 2;
+}
+
+.card__text {
+  font-family: 'Raleway';
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 24px;
+  z-index: 2;
+}
+.lots__look-more-link{
+  font-family: 'Raleway';
+  display: block;
+  font-size: 20px;
+  line-height: 23.48px;
+  padding: 33px 0 0 40px;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
   
+}
