@@ -21,7 +21,7 @@ header {
   text-underline-offset: 3px;
 }
 
-.header__links-list-item_no-bullit {
+.links-list-item_no-bullit {
   list-style: none;
   text-decoration: none;
 }
@@ -108,7 +108,7 @@ header {
   z-index: 2;
   gap: 106px;
 }
-.cover__p {
+.cover__footer p {
   font-family:'Raleway', sans-serif;
   font-size: 22px;
   font-weight: 400;
@@ -293,19 +293,6 @@ footer {
   margin: 180px 0 82px 0;
   padding: 0 50px 0 50px;
   gap: 178px;
-}
-
-.footer__address {
-  margin: 0;
-  padding: 0;
-  width: 264px;
-  font-family:'Raleway', sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 24.3px;
-  text-decoration: none;
-  font-style: normal;
-  text-underline-offset: 4px;
 }
 
 .footer__links-list {
